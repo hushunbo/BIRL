@@ -139,6 +139,15 @@ Moreover we developed two additional script for converting large images, handlin
         -config ./configs/ImageJ_bUnwarpJ-pure-image_histol-1k.txt \
         --hist_matching
     ```
+* **[Advanced Normalization Tools](http://stnava.github.io/ANTs/) (ANTs)** is a medical imaging framework containing state-of-the-art medical image registration and segmentation methods. For illustration see ANTsPy [registration tutorial](https://github.com/ANTsX/ANTsPy/blob/master/tutorials/10minTutorial.ipynb). 
+    ```bash
+    python bm_experiments/bm_ANTs.py \
+        -c ./data_images/pairs-imgs-lnds_anhir.csv \
+        -d ./data_images \
+        -o ./results \
+        --path_ANTs ./applications/ANTs/bin \
+        --path_config ./configs/ANTs.txt
+    ```
 * ...
 
 Some more image registration methods integrated in ImageJ are listed in [Registration](https://imagej.net/Registration).

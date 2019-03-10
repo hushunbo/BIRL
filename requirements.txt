@@ -8,4 +8,5 @@ tqdm>=4.7.4,<=4.30  # higher fails ascii for py2
 scikit-image
 opencv-python
 openslide-python
+nibabel
 mock
